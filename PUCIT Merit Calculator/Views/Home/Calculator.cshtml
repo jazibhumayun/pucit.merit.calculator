@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Calculator";
+}
+
+<h2>Calculate Your Aggregate</h2>
+
+<form action="/Home/ShowAggregate" method="get">
+    <table>
+        <tr>
+            <td>Marks Obtained in Intermediate: </td>
+            <td><input type="text" name="marksObtainedInter" required /></td>
+        </tr>
+
+        <tr>
+            <td>Total marks of Intermediate: </td>
+            <td><input type="text" name="totalMarksInter" required /></td>
+        </tr>
+
+        <tr>
+            <td>Marks Obtained in Matric: </td>
+            <td><input type="text" name="marksObtainedMatric" required /></td>
+        </tr>
+
+        <tr>
+            <td>Total marks of Matric: </td>
+            <td><input type="text" name="totalMarksMatric" required /></td>
+        </tr>
+
+        <tr>
+            <td>Marks Obtained in Entry Test (out of 140)</td>
+            <td><input type="text" name="marksObtainedTest" required /></td>
+        </tr>
+
+
+    </table>
+    <br />
+    <input type="submit" value="Calculate" />
+</form>
+
+
