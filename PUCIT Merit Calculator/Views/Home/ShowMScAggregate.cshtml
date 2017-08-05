@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "MSc Aggregate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>
+    Your Aggregate is : @ViewBag.Aggregate
+</h2>
+
+<br />
+<br />
+<h4>
+<style>
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+<table border="1" width="500">
+    <thead>
+        MSc Closing Merit at PUCIT
+    </thead>
+    <tr>
+        <td>
+            Year
+        </td>
+        <td>
+            PU Graduate
+        </td>
+        <td>
+            Other University Graduate
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            2016
+        </td>
+        <td>
+            Morning: 58.15 <br /> Afternoon: 53.50
+        </td>
+        <td>
+            Morning: 60.45 <br /> Afternoon: 55.30
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            2014
+        </td>
+        <td>
+            Morning: 57.81 <br /> Afternoon: 53.06
+        </td>
+        <td>
+            Morning: 57.81 <br /> Afternoon: 53.06
+        </td>
+    </tr>
+
+
+
+</table>
+</h4>
+<br />
+@Html.ActionLink("Calculate Again", "MScCal", "Home")

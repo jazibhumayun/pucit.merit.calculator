@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "ShowAggregate";
+    ViewBag.Title = "BS Aggregate";
 }
 
 
@@ -12,143 +12,152 @@
 
 <br />
 <br />
-<h4>
-    <table border="1">
-        <thead>
-            Closing Merit at PUCIT
-        </thead>
-        <tr colspan="5">
+<h4><style>
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
 
-            <td> Admission Year </td>
-            <td colspan="2">
-                2014
-            </td>
-            <td colspan="2">
-                2016
-            </td>
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+<table border="1" width="550">
+    <thead>
+        BS Closing Merit at PUCIT
+    </thead>
+    <tr colspan="5">
 
-        </tr>
+        <td> Admission Year </td>
+        <td colspan="2">
+            2014
+        </td>
+        <td colspan="2">
+            2016
+        </td>
 
-        <tr colspan="5">
-            <td> Campus </td>
-            <td>
-                Old
-            </td>
-            <td>
-                New
-            </td>
-            <td>
-                Old
-            </td>
-            <td>
-                New
-            </td>
-        </tr>
-        <tr>
-            <td>
-                BS (SE) Morning
-            </td>
-            <td>
-                79.51
-            </td>
-            <td>
-                78.10
-            </td>
-            <td>
-                77.23
-            </td>
-            <td>
-                74.76
-            </td>
-        </tr>
-        <tr>
-            <td>
-                BS (CS) Morning
-            </td>
-            <td>
-                78.25
-            </td>
-            <td>
-                76.29
-            </td>
-            <td>
-                74.73
-            </td>
-            <td>
-                73.58
-            </td>
-        </tr>
-        <tr>
-            <td>
-                BS (IT) Morning
-            </td>
-            <td>
-                73.80
-            </td>
-            <td>
-                72.30
-            </td>
-            <td>
-                71.89
-            </td>
-            <td>
-                69.96
-            </td>
-        </tr>
-        <tr>
-            <td>
-                BS (SE) Afternoon
-            </td>
-            <td>
-                76.15
-            </td>
-            <td>
-                74.79
-            </td>
-            <td>
-                72.85
-            </td>
-            <td>
-                70.50
-            </td>
-        </tr>
-        <tr>
-            <td>
-                BS (CS) Afternoon
-            </td>
-            <td>
-                74.35
-            </td>
-            <td>
-                73.61
-            </td>
-            <td>
-                70.84
-            </td>
-            <td>
-                70.03
-            </td>
-        </tr>
-        <tr>
-            <td>
-                BS (IT) Afternoon
-            </td>
-            <td>
-                73.44
-            </td>
-            <td>
-                71.71
-            </td>
-            <td>
-                69.26
-            </td>
-            <td>
-                68.95
-            </td>
-        </tr>
+    </tr>
+
+    <tr colspan="5">
+        <td> Campus </td>
+        <td>
+            Old
+        </td>
+        <td>
+            New
+        </td>
+        <td>
+            Old
+        </td>
+        <td>
+            New
+        </td>
+    </tr>
+    <tr>
+        <td>
+            BS (SE) Morning
+        </td>
+        <td>
+            79.51
+        </td>
+        <td>
+            78.10
+        </td>
+        <td>
+            77.23
+        </td>
+        <td>
+            74.76
+        </td>
+    </tr>
+    <tr>
+        <td>
+            BS (CS) Morning
+        </td>
+        <td>
+            78.25
+        </td>
+        <td>
+            76.29
+        </td>
+        <td>
+            74.73
+        </td>
+        <td>
+            73.58
+        </td>
+    </tr>
+    <tr>
+        <td>
+            BS (IT) Morning
+        </td>
+        <td>
+            73.80
+        </td>
+        <td>
+            72.30
+        </td>
+        <td>
+            71.89
+        </td>
+        <td>
+            69.96
+        </td>
+    </tr>
+    <tr>
+        <td>
+            BS (SE) Afternoon
+        </td>
+        <td>
+            76.15
+        </td>
+        <td>
+            74.79
+        </td>
+        <td>
+            72.85
+        </td>
+        <td>
+            70.50
+        </td>
+    </tr>
+    <tr>
+        <td>
+            BS (CS) Afternoon
+        </td>
+        <td>
+            74.35
+        </td>
+        <td>
+            73.61
+        </td>
+        <td>
+            70.84
+        </td>
+        <td>
+            70.03
+        </td>
+    </tr>
+    <tr>
+        <td>
+            BS (IT) Afternoon
+        </td>
+        <td>
+            73.44
+        </td>
+        <td>
+            71.71
+        </td>
+        <td>
+            69.26
+        </td>
+        <td>
+            68.95
+        </td>
+    </tr>
 
 
-    </table>
+</table>
 </h4>
 <br />
 @Html.ActionLink("Calculate Again", "Index", "Home")

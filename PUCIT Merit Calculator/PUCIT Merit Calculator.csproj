@@ -163,6 +163,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Calculator.cshtml" />
     <Content Include="Views\Home\ShowAggregate.cshtml" />
+    <Content Include="Views\Home\MScCal.cshtml" />
+    <Content Include="Views\Home\ShowMScAggregate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

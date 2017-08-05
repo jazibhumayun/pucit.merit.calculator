@@ -29,6 +29,27 @@ namespace PUCIT_Merit_Calculator.Controllers
             ViewBag.Aggregate = merit;
             return View();
         }
+        public ActionResult  MScCal()
+        {
+            return View();
+        }
+        public ActionResult ShowMScAggregate()
+        {
+            Double marksObtainedBSc = Convert.ToDouble(Request["marksObtainedBSc"]);
+            Double totalMarksBSc = Convert.ToDouble(Request["totalMarksBSc"]);
+            Double marksObtainedInter = Convert.ToDouble(Request["marksObtainedInter"]);
+            Double totalMarksInter = Convert.ToDouble(Request["totalMarksInter"]);
+            Double marksObtainedMatric = Convert.ToDouble(Request["marksObtainedMatric"]);
+            Double totalMarksMatric = Convert.ToDouble(Request["totalMarksMatric"]);
+            Double marksObtainedTest = Convert.ToDouble(Request["marksObtainedTest"]);
+
+            Double A = ((marksObtainedBSc + (marksObtainedInter/5) + (marksObtainedMatric / 4)) / (totalMarksBSc+ (totalMarksInter/5) + (totalMarksMatric / 4))) * (70);
+            Double B = (marksObtainedTest / 140) * (30);
+            Double merit = A + B;
+            merit = Math.Round(merit, 2, MidpointRounding.AwayFromZero);
+            ViewBag.Aggregate = merit;
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
